@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    background-color: #2e2e2e;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Info Section */
+.info-container {
+    width: 220px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.profile h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* Calendar Section */
+.calendar-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    width: 300px;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.month {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Calendar Days */
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day-name, .day {
+    text-align: center;
+}
+
+.day-name {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+.day {
+    background-color: #3a3a3a;
+    padding: 10px 0;
+    border-radius: 6px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.day.empty {
+    background-color: transparent;
+}
+
+.day:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+.color-selector {
+    margin-top: 20px;
+}
+
+.event-type {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white; /* Texto branco */
+    cursor: pointer;
+    margin-right: 10px; /* Espaçamento entre os botões */
+    background-color: #dc3545;
+}
+
+/* Cores de fundo dos botões de acordo com suas funções */
+.meeting {
+    background-color: #007bff; /* Azul para reuniões */
+}
+
+.birthday {
+    background-color: #13a042; /* Amarelo para aniversários */
+}
+
+.important {
+    background-color: #dc3545; /* Vermelho para eventos importantes */
+}
+
+/* Estilo do botão de adicionar evento */
+#add-event {
+    background-color: #28a745; /* Verde para o botão de adicionar evento */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
